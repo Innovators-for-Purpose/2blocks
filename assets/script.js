@@ -4,6 +4,8 @@ function showMenu() {
   const menu = document.getElementById("mobile-menu");
   menu.classList.add("visible");
   // adds the dark overlay over the screen
+  const background = document.getElementById("black-overlay-mobile");
+  background.classList.add("visible");
 }
 
 function closeMenu() {
@@ -11,7 +13,10 @@ function closeMenu() {
   const menu = document.getElementById("mobile-menu");
   menu.classList.remove("visible");
   // removes the dark overlay
+  const background = document.getElementById("black-overlay-mobile");
+  background.classList.remove("visible");
 }
+
 
 function createComponent(templateId, cssPath, template) {
   // puts the template html into a <template></template> element
@@ -19,7 +24,7 @@ function createComponent(templateId, cssPath, template) {
   templateElement.setAttribute("id", templateId);
   templateElement.innerHTML = template;
   document.body.appendChild(templateElement);
-
+ 
   // in html:
   //   <header-component></header-component>
   customElements.define(
