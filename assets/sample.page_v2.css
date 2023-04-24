@@ -406,8 +406,9 @@ body {
 
 .Our-Voice-Position{
   position: absolute;
-  left: 60%;
-  top: 70%; 
+  left: 70%;
+  top: 40%;
+
 }
 
 .Our-Voice-button:hover {
@@ -433,8 +434,8 @@ body {
 
 .Cant-Wait-Position {
   position:absolute;
-  left: 70%;
-  top: 40%;
+  left: 60%;
+  top: 70%; 
 }
 
 .Cant-Wait-button:hover {
