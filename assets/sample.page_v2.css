@@ -514,6 +514,9 @@ span.hamburger-menu {
   background-color: #dddddd;
   width: 100%;
   padding: 8px;
+
+  height:100px;
+  width: 48px;
 }
 
 .mobile-menu.visible {

@@ -56,7 +56,7 @@ createComponent("header-component", "./assets/sample.page_v2.css", `
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
   />
   <div class="container-topnav-desktop p-left p-right">
-      <a href="#">
+      <a href="index.html">
           <div class="container-logo-title">
                 <img class="TwoBlocksLogoNav"src="TwoBlocksLogo Nav.png">
                 <span class="top-nav-heading">Let's Change The Narrative</span>
@@ -64,19 +64,19 @@ createComponent("header-component", "./assets/sample.page_v2.css", `
       </a>
       
       <div class="container-desktop-button-pages">
-          <a href="#">
+          <a href="our-potential.html">
               <div class= "button-pages desktop-button-page-font">Our Potential!!!!</div>
           </a>
           
-          <a href="#">
+          <a href="our-success.html">
               <div class= "button-pages desktop-button-page-font">Our Success </div>
           </a>
           
-          <a href="#">
+          <a href="our-voice.html">
               <div class= "button-pages desktop-button-page-font">Our Voice </div>
           </a>
           
-          <a href="#">
+          <a href="https://hoverlay.io/space/2i9">
               <div class= "button-pages desktop-button-page-font">Can't Wait</div>
           </a>
       </div>
