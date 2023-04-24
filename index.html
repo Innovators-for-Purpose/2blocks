@@ -11,46 +11,16 @@
     <title>2Blocks</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./assets/script.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <div class="container-topnav-desktop p-left p-right">
-        <a href="#">
-            <div class="container-logo-title">
-                 <img class="TwoBlocksLogoNav"src="TwoBlocksLogo Nav.png">
-                 <span class="top-nav-heading">Let's Change The Narrative</span>
-            </div>  
-        </a>
-        
-        <div class="container-desktop-button-pages">
-            <a href="#">
-                <div class= "button-pages desktop-button-page-font">Our Potential</div>
-            </a>
-            
-            <a href="#">
-                <div class= "button-pages desktop-button-page-font">Our Success </div>
-            </a>
-            
-            <a href="#">
-                <div class= "button-pages desktop-button-page-font">Our Voice </div>
-            </a>
-           
-            <a href="#">
-                <div class= "button-pages desktop-button-page-font">Can’t Wait</div>
-            </a>
-        </div>
-    </div>
-   
-    <div class="container-topnav-mobile p-left p-right">
-        <img class="TwoBlocksLogoNav"src="TwoBlocksLogo Nav.png">
-        <span class="top-nav-heading rectangle">Let's Change The Narrative</span>
-        <span class="hamburger-memu material-symbols-outlined"> menu</span>
-    </div>
+    <header-component></header-component>
 
     <div class="content-container-background-img">
         <img class="TwoBlocks-Desktop-Background-Image" src="TwoBlocks Desktop Background Image.png">
        
-        <a href="#" class="Our-Potential-Position button-icon">
+        <a href="potential.html" class="Our-Potential-Position button-icon">
             <div class="Our-Potential-button font-button">
                 Our Potential
             </div>
@@ -64,6 +34,11 @@
             <img src="Location Icon 2blocks.svg">
         </a>
 
+        <a href="https://hoverlay.io/space/2i9" class="Cant-Wait-Position font-button">
+            <img src="Icon AR svg - Desktop.svg">
+        </a>
+      
+      
         <a href="#" class="Our-Voice-Position button-icon">
             <div class="Our-Voice-button font-button">
                 Our Voice
@@ -71,27 +46,23 @@
             <img src="Location Icon 2blocks.svg">
         </a>
 
-        <a href="https://hoverlay.io/space/2i9" class="Cant-Wait-Position font-button">
-            <img src="Icon AR svg - Desktop.svg">
-        </a>
-
-
 
         <div class="mobile-content-align">
-            <a href="#" class="Our-Potential-mobile-button  font-button">
-                Our Potential
-            </a>
 
-            <a href="#" class="Our-Success-mobile-button  font-button">
+            <a href="our-success.html" class="Our-Success-mobile-button  font-button">
                 Our Success 
             </a>
 
-            <a href="#" class="Our-Voice-mobile-button  font-button">
+            <a href="our-voice.html" class="Our-Voice-mobile-button  font-button">
                 Our Voice
             </a>
             
-            <a href="#" class="Our-Voice-mobile-button  font-button">
-                Our Voice
+            <a href="our-potential.html" class="Our-Potential-mobile-button  font-button">
+                Our Potential
+            </a>
+
+            <a href="https://hoverlay.io/space/2i9" class="Our-Voice-mobile-button  font-button">
+                Our Success
             </a>
         </div>
        
@@ -101,6 +72,24 @@
             </a>
         </div>
     </div>
+
+    <!-- Black overlay -->
+    <div id="black-overlay-mobile"> </div>
+
+    <!-- Mobile popover menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class= "menu-header">
+            <div class="menu-title">2Blocks</div>
+            <div onclick="closeMenu()" class="menu-close-button material-symbols-outlined">
+                close
+            </div>
+        </div>
+        <div class="menu-item">Item1</div>
+        <div class="menu-item">Item2</div>
+        <div class="menu-item">Item3</div>
+        <div class="menu-item">Item4</div>
+    </div>
 </body>
+
 
 </html>
