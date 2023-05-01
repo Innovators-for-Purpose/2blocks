@@ -30,7 +30,7 @@ function muteAudio() {
   
   // state: on button is visible
   // change: we want to hide the on button
-  const volumeButtonOn = document.getElementById("volume-button-up");
+  const volumeButtonOn = document.getElementById("volume-button-on");
   volumeButtonOn.classList.remove("visible");
  
   // state: mute button is NOT visible
@@ -50,7 +50,7 @@ function playAudio() {
 
   // state: on button is invisible
   // change: we want to show the on button
-  const volumeButtonOn = document.getElementById("volume-button-up");
+  const volumeButtonOn = document.getElementById("volume-button-on");
   volumeButtonOn.classList.add("visible");
 
   // state: mute button is = visible

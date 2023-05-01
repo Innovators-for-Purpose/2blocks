@@ -262,7 +262,10 @@ video {
 
   width: 161px;
   height: 92px;
+
 }
+
+
 
 .desktop-button-page-font {
   font-family: Helvetica;
@@ -373,12 +376,16 @@ body {
   background: rgba(70, 67, 226, 0.8);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
+
+  transform:scale(0.95,0.95);
+
 }
 
 .Our-Success-Position {
   position: absolute;
   left: 15%;
   top: 25%;
+
 }
 
 .Our-Success-button:hover {
@@ -482,8 +489,6 @@ span.hamburger-menu {
   font-weight: bold;
 }
 
-
-
 .volume-button.material-symbols-outlined {
   display: none;
   flex-direction: row;
@@ -491,6 +496,7 @@ span.hamburger-menu {
   align-items: center;
   padding: 10px;
   gap: 10px;
+  cursor: pointer;
 
   background: #FFFFFF;
   border-radius: 100px;
@@ -532,9 +538,13 @@ span.hamburger-menu {
 
   height: auto;
   width: 100%;
+
+  z-index: 100;
 }
 
-
+.mobile-menu a {
+  display: block;
+}
 
 
 
