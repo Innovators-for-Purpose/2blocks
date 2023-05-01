@@ -18,6 +18,49 @@ function closeMenu() {
 }
 
 
+
+function muteAudio() {
+  console.log("Audio Mutes");
+
+  // state: audio is playing
+  // change: we want to mute the audio
+  // TODO
+  const volumeButtonAudio = document.getElementById("myAudio");
+  volumeButtonAudio.pause();
+  
+  // state: on button is visible
+  // change: we want to hide the on button
+  const volumeButtonOn = document.getElementById("volume-button-up");
+  volumeButtonOn.classList.remove("visible");
+ 
+  // state: mute button is NOT visible
+  // change: we want to show the mute button
+  const volumeButtonOff = document.getElementById("volume-button-off");
+  volumeButtonOff.classList.add("visible");
+}
+
+
+function playAudio() {
+  console.log("Audio Plays")
+ 
+  // state: Mute is on
+  // change: we want to unmute the audio
+  const volumeButtonAudio = document.getElementById("myAudio");
+  volumeButtonAudio.play();
+
+  // state: on button is invisible
+  // change: we want to show the on button
+  const volumeButtonOn = document.getElementById("volume-button-up");
+  volumeButtonOn.classList.add("visible");
+
+  // state: mute button is = visible
+  // change: we want to hide the mute button
+  const volumeButtonOff = document.getElementById("volume-button-off");
+  volumeButtonOff.classList.remove("visible");
+
+}
+
+
 function createComponent(templateId, cssPath, template) {
   // puts the template html into a <template></template> element
   const templateElement = document.createElement("template");
