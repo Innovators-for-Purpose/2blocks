@@ -108,7 +108,7 @@ createComponent("header-component", "./assets/sample.page_v2.css", `
       
       <div class="container-desktop-button-pages">
           <a href="our-potential.html">
-              <div class= "button-pages desktop-button-page-font">Our Potential!!!!</div>
+              <div class= "button-pages desktop-button-page-font">Our Potential</div>
           </a>
           
           <a href="our-success.html">

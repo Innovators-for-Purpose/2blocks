@@ -600,6 +600,22 @@ span.hamburger-menu {
   border-radius: 6px;
 }
 
+.Our-Potential-mobile-button {
+  display:none
+}
+ 
+.Our-Success-mobile-button {
+  display:none
+}
+ 
+.Our-Voice-mobile-button {
+  display:none
+}
+ 
+.Cant-Wait-mobile-button {
+  display:none 
+}
+
 @media screen and (max-width: 800px) {
 
   .mobile-content-align {
