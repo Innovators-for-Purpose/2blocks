@@ -35,7 +35,7 @@
         </a>
 
         <a href="https://hoverlay.io/space/2i9" class="Cant-Wait-Position font-button">
-            <img src="Icon AR svg - Desktop.svg">
+            <img src="Desktop - Icon AR.svg">
         </a>
       
       
@@ -61,15 +61,25 @@
                 Our Potential
             </a>
 
-            <a href="https://hoverlay.io/space/2i9" class="Our-Voice-mobile-button  font-button">
-                Our Success
+            <a href="https://hoverlay.io/space/2i9" class="Cant-Wait-mobile-button  font-button">
+                Can't Wait
             </a>
         </div>
        
        <div>
-            <a href="#" class="material-symbols-outlined volume-button">
-                    volume_up
-            </a>
+            </a> 
+                <span onclick="muteAudio()" class="material-symbols-outlined volume-button visible"  id="volume-button-on">
+                        volume_up
+                </span>
+
+                <span onclick="playAudio()" class="material-symbols-outlined volume-button" id="volume-button-off">
+                    volume_off
+                </span>
+            </a> 
+            
+            <audio id="myAudio" autoplay>
+                <source src="./assets/cardboardboxes_03-105106.mp3" type="audio/mpeg">
+            </audio>
         </div>
     </div>
 
@@ -84,10 +94,14 @@
                 close
             </div>
         </div>
-        <div class="menu-item">Item1</div>
-        <div class="menu-item">Item2</div>
-        <div class="menu-item">Item3</div>
-        <div class="menu-item">Item4</div>
+        
+          <a href="our-potential.html" class="mobile-menu-font menu-item">Our Potential</a>
+  
+          <a href="our-success.html" class="mobile-menu-font menu-item">Our Success</a>
+  
+          <a href="our-voice.html" class="mobile-menu-font menu-item">Our Voice</a>
+  
+          <a href="https://hoverlay.io/space/2i9" class="mobile-menu-font menu-item">Can't Wait</a>
     </div>
 </body>
 
