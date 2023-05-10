@@ -134,15 +134,15 @@ div.relative {
 
 
 .container-videocontent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
 }
 
 
 
-.Joseph_Quote-01 {
+.image-size {
   width: 416px;
   border-radius: 10%;
   float: right;
@@ -170,12 +170,23 @@ video {
   gap: 10px;
 }
 
-.p-left {
-  padding-left: 120px;
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.p-right {
-  padding-right: 120px;
+
+
+.Page-content {
+  /* padding-left: 120px;
+  padding-right: 120px; */
+  padding: 4%;
+
 }
 
 .p-leftimage2 {
@@ -295,17 +306,19 @@ video {
 
 }
 
-
-
-
 .container-paragraphtext {
   /* max-width: 400px; */
+  font-family: Helvetica;
+  font-style: normal;
+  
   flex-grow: 1;
   float: left;
   margin: 0px;
 }
 
-
+.container-paragraphtext img {
+  margin-left: 20px;
+}
 
 body {
   margin: 0px;
@@ -356,8 +369,8 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  left: 10%;
-  top: 70%;
+  left: 15%;
+  top: 25%;
 }
 
 .button-icon {
@@ -390,9 +403,8 @@ body {
 
 .Our-Success-Position {
   position: absolute;
-  left: 15%;
-  top: 25%;
-
+  left: 70%;
+  top: 30%;
 }
 
 .Our-Success-button:hover {
@@ -419,8 +431,9 @@ body {
 
 .Our-Voice-Position {
   position: absolute;
-  left: 70%;
-  top: 40%;
+  left: 20%;
+  top: 70%;
+  
 
 }
 
@@ -447,8 +460,8 @@ body {
 
 .Cant-Wait-Position {
   position: absolute;
-  left: 60%;
-  top: 70%;
+  left: 70%;
+  top: 80%;
 }
 
 .Cant-Wait-button:hover {
@@ -533,18 +546,24 @@ span.hamburger-menu {
 .mobile-content-align {
   display: none;
 }
+ 
+.twoblocks-logo-menu {
+ display: none;
+}
 
 .mobile-menu {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #D7D7D7;
+  background-color: #FDFDFD;
+  box-shadow: 0px 10px 15px -3px rgba(16, 24, 40, 0.1),
+  0px 4px 6px -4px rgba(16, 24, 40, 0.1);
+  
   width: 100%;
-  padding: 0px;
-
   height: auto;
-  width: 100%;
+
+  padding: 0px;
 
   z-index: 100;
 }
@@ -561,7 +580,7 @@ span.hamburger-menu {
   align-items: center;
   padding: 10px;
   gap: 8px;
-  background-color: #D7D7D7;
+  background-color: #FDFDFD;
 
   height: 48px;
   width: 100%;
@@ -586,6 +605,7 @@ span.hamburger-menu {
   width: 100%;
   height: 59px;
   padding: 8px;
+  gap: 8px;
 }
 
 .mobile-menu .menu-title {
@@ -606,8 +626,9 @@ span.hamburger-menu {
   height: 36px;
 
 
-  background: #D7D7D7;
+  background: #FDFDFD;
   border: 1px solid #e5e5e5;
+  color: #737373;
   border-radius: 6px;
 }
 
@@ -681,6 +702,10 @@ span.hamburger-menu {
     height: 59px;
   }
 
+  .container-logo-title-link {
+    flex-grow: 0;
+  }
+
   .container-topnav-desktop {
     display: none;
   }
@@ -706,6 +731,11 @@ span.hamburger-menu {
 
   .TwoBlocksLogoNav {
     height: 45px;
+  }
+
+  .twoblocks-logo-menu {
+    width: 43px;
+    height: 43px;
   }
 
   span.hamburger-menu {

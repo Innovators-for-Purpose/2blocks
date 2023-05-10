@@ -114,17 +114,19 @@ createComponent("header-component", "./assets/sample.page_v2.css", `
           <div class= "button-pages desktop-button-page-font">Our Success </div>
       </a>
       
-      <a href="our-voice.html">
+      <a href="https://hoverlay.io/space/2i9">
           <div class= "button-pages desktop-button-page-font">Our Voice </div>
       </a>
       
-      <a href="https://hoverlay.io/space/2i9">
+      <a href="cant-wait.html">
           <div class= "button-pages desktop-button-page-font">Can't Wait</div>
       </a>
   </div>
   
   <div class="container-topnav-mobile p-left p-right">
-      <img class="TwoBlocksLogoNav"src="TwoBlocksLogo Nav.png">
+      <a href="index.html" class="container-logo-title-link">
+        <img class="TwoBlocksLogoNav"src="TwoBlocksLogo Nav.png">
+      </a>
       <span class="top-nav-heading rectangle">Let's Change The Narrative</span>
       <span onclick="showMenu()" class="hamburger-menu material-symbols-outlined">
           menu
