@@ -325,7 +325,7 @@ body {
 }
 
 .font-button {
-  font-family: 'Inter';
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -539,10 +539,6 @@ span.hamburger-menu {
  display: flex; 
 }
 
- #backgroundAudio
-
-
-
 .mobile-content-align {
   display: none;
 }
@@ -648,8 +644,8 @@ span.hamburger-menu {
   display:none 
 }
 
-@media screen and (max-width: 925px) {
-
+/* Narrowest screen - index page mobile buttons */
+@media screen and (max-width: 650px) {
   .mobile-content-align {
     display: flex;
     flex-direction: column;
@@ -657,7 +653,28 @@ span.hamburger-menu {
     align-items: center;
     padding: 0px;
     gap: 50px;
+    margin-bottom: 70px;
   }
+
+  .Our-Voice-Position {
+    display: none;
+  }
+
+  .Our-Success-Position {
+    display: none;
+  }
+
+  .Our-Potential-Position {
+    display: none;
+  }
+
+  .Cant-Wait-Position {
+    display: none;
+  }
+}
+
+/* Medium narrow screen - mobile header and mobile subpages */
+@media screen and (max-width: 965px) {
 
   .p-left {
     padding-left: 10px;
@@ -799,14 +816,6 @@ span.hamburger-menu {
 
   }
 
-  .Our-Potential-button {
-    display: none;
-  }
-
-  .Our-Potential-Position {
-    display: none;
-  }
-
   .Our-Success-mobile-button {
     display: flex;
     flex-direction: row;
@@ -822,14 +831,6 @@ span.hamburger-menu {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(5px);
     border-radius: 16px;
-  }
-
-  .Our-Success-button {
-    display: none;
-  }
-
-  .Our-Success-Position {
-    display: none;
   }
 
   .Our-Voice-mobile-button {
@@ -849,14 +850,6 @@ span.hamburger-menu {
     border-radius: 16px;
   }
 
-  .Our-Voice-button {
-    display: none;
-  }
-
-  .Our-Voice-Position {
-    display: none;
-  }
-
   .Cant-Wait-mobile-button {
     display: flex;
     flex-direction: row;
@@ -872,14 +865,6 @@ span.hamburger-menu {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(5px);
     border-radius: 16px;
-  }
-
-  .Cant-Wait-button {
-    display: none;
-  }
-
-  .Cant-Wait-Position {
-    display: none;
   }
 
   .container-desktop-button-pages {
