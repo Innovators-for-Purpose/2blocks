@@ -350,6 +350,29 @@ body {
   border-radius: 15px;
 }
 
+@keyframes Our-Potential-button {
+  from {
+    top: -140px;
+    left: -140px;
+  }
+  to {
+    left: 15%;
+    top: 25%;
+  }
+}
+
+@keyframes Our-Potential-Position {
+  from {
+    top: -140px;
+    left: -140px;
+  }
+  to {
+    left: 15%;
+    top: 25%;
+  }
+}
+
+
 .Our-Potential-button:hover {
   background: rgba(70, 67, 226, 0.8);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -369,9 +392,13 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
+  animation-duration: 2s;
   left: 15%;
   top: 25%;
 }
+
+
+
 
 .button-icon {
   display: flex;
@@ -645,7 +672,7 @@ span.hamburger-menu {
 }
 
 /* Narrowest screen - index page mobile buttons */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px){
   .mobile-content-align {
     display: flex;
     flex-direction: column;
@@ -660,17 +687,75 @@ span.hamburger-menu {
     display: none;
   }
 
+  .Our-Voice-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 200px;
+    height: 60px;
+    background: rgba(70, 67, 226, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+
+  }
+
+
   .Our-Success-Position {
-    display: none;
+    display:none;
   }
 
   .Our-Potential-Position {
     display: none;
   }
 
+  .Our-Potential-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  
+    width: 200px;
+    height: 60px;
+    background: rgba(70, 67, 226, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+
+    animation-duration: 2s;
+
+  }
+
+
   .Cant-Wait-Position {
     display: none;
   }
+
+  .Cant-Wait-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  
+    width: 200px;
+    height: 60px;
+    background: rgba(70, 67, 226, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+  }
+  
+  
+
+
 }
 
 /* Medium narrow screen - mobile header and mobile subpages */
@@ -739,7 +824,7 @@ span.hamburger-menu {
   .main-heading {
     font-family: helvetica;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 24px;
     line-height: 40px;
     margin: 24px 0px 0px 0px;
