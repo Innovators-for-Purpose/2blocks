@@ -679,7 +679,7 @@ span.hamburger-menu {
 
 .ifp-link {
   position: absolute;
-  bottom: 40px;
+  top: 96%;
   left: 50%;
   transform: translate(-50%);
 
@@ -1021,7 +1021,6 @@ span.hamburger-menu {
 
   .ifp-link {
     font-size: 12px;
-    bottom: 12px;
     white-space: nowrap;
   }
 
