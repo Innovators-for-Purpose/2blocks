@@ -677,7 +677,28 @@ span.hamburger-menu {
   display: none;
 }
 
+.ifp-link {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: lightgrey;
+}
+
+.ifp-link a {
+  text-decoration: none;
+  color: lightgrey;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1000px){
+
+}
   
 
 /* Narrowest screen - index page mobile buttons */
@@ -994,6 +1015,14 @@ span.hamburger-menu {
 
   #black-overlay-mobile.visible {
     display: inline-block;
+  }
+
+
+
+  .ifp-link {
+    font-size: 12px;
+    bottom: 12px;
+    white-space: nowrap;
   }
 
 }
